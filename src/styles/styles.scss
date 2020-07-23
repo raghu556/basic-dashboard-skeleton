@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import "font-style";
+
+// configure Bootstrap START
+$theme-colors: (
+  "primary": $blue-primary,
+  "secondary": $orange,
+  "danger": $red,
+);
+$link-color: $orange;
+$link-hover-color: $orange;
+$font-family-base: "Open Sans", sans-serif;
+.btn.btn-primary {
+  &:hover {
+    background-color: $orange;
+    border-color: $orange;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+@import "~node_modules/bootstrap/scss/bootstrap";
+// configure Bootstrap End
