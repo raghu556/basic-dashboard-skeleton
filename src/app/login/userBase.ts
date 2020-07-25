@@ -1,12 +1,11 @@
 export const MockLoginUsersData = [
   {
-    userId: 'Snehal',
+    userId: 'demo',
     userPassword: '1234',
-    userTitle: 'Dr.',
-    userFirstName: 'Nora',
-    userLastName: 'Noth',
-    userRole: 'Notar/in',
-    userResidence: 'Berlin',
+    userTitle: 'Mr.',
+    userFirstName: 'demo',
+    userLastName: 'demo',
+    userResidence: 'Mumbai',
     rights: [
       {
         right: 'APP_OPEN_RIGHTS',
