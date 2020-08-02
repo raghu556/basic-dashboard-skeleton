@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import {
-  NgbAccordionModule
+  NgbAccordionModule,NgbTabsetModule
 } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [],
@@ -12,13 +12,15 @@ import {
     RouterModule,
     ReactiveFormsModule,
     FormsModule,
-    NgbAccordionModule
+    NgbAccordionModule,
+    NgbTabsetModule
   ],
   exports: [
     CommonModule,
     RouterModule,
     NgbAccordionModule,
     ReactiveFormsModule,
+    NgbTabsetModule,
     FormsModule
   ],
   providers: [],

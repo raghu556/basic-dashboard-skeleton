@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
       })
       localStorage.setItem('POC_DASHBOARD_TOKEN_KEY', JSON.stringify(userDetails));
       this.isAuthenticated = true;
-      this.router.navigate(['/poc/dashboard']);
+      this.router.navigate(['/poc/dashboard/tab/1']);
     } else {
       this.isAuthenticated = false;
     }

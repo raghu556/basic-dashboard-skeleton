@@ -13,7 +13,7 @@ import { addAuthorizationGuards } from 'src/app/shared/authorization/add-authori
     SharedModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [],
+  exports: [SharedModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

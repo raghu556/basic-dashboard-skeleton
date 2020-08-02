@@ -2,7 +2,6 @@ import { LoginComponent } from 'src/app/login/login.component';
 import { AuthorizedRoutes } from 'src/app/shared/authorization/activate-if-user-authorized';
 import { DashboardComponent } from 'src/app/dashboard/dashboard.component';
 import { AuthGuard } from 'src/app/shared/authentication/auth.guard';
-const homePath = '/poc/dashboard';
 export const routes: AuthorizedRoutes = [
   {
     path: '',
@@ -18,17 +17,10 @@ export const routes: AuthorizedRoutes = [
         permitAll: true
       },
       {
-        path: 'dashboard',
+        path: 'dashboard/tab/:id',
         component: DashboardComponent,
         permitAll: true,
-        canActivate: [AuthGuard],
-        children: [
-          {
-            path: '',
-            pathMatch: 'full',
-            redirectTo: homePath
-          }
-        ]
+        canActivate: [AuthGuard]
       }
       // {
       //   path: 'access-denied',
